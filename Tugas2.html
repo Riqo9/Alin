@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Tugas 2 &#8212; My sample book</title>
+    <title>Aljabar Matrix &#8212; My sample book</title>
   
   
   
@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -364,7 +366,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Tugas 2</h1>
+    <h1>Aljabar Matrix</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -374,7 +376,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aljabar-matrix">Aljabar Matrix</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-terdiri-dari-beberapa-jenis-diantaranya-adalah">Matrix terdiri dari beberapa jenis diantaranya adalah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-matrix">Operasi Matrix</a></li>
 </ul>
             </nav>
         </div>
@@ -386,25 +389,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="tugas-2">
-<h1>Tugas 2<a class="headerlink" href="#tugas-2" title="Link to this heading">#</a></h1>
-<p>Tidak mengerjakan diluar</p>
-<section id="aljabar-matrix">
-<h2>Aljabar Matrix<a class="headerlink" href="#aljabar-matrix" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Berikan penjelasan tentang apa itu matrix</p></li>
-<li><p>Operasi Matrix</p>
-<ul>
-<li><p>Penjumlahan</p></li>
-<li><p>Pengurangan</p></li>
-<li><p>Perkalian</p></li>
-<li><p>Transpose Matrix</p></li>
-</ul>
-</li>
-<li><p>Buat program untuk mengalikan matrix A dan B tanpa menggunakan “&#64;”</p></li>
-</ul>
-<p>Matrix adalah suatu kumpulan bilangan sejumlah m x n yang disusun menjadi m adalah baris dan n adalah kolom</p>
-<p>Matrix terdiri dari beberapa jenis diantaranya adalah</p>
+  <section id="aljabar-matrix">
+<h1>Aljabar Matrix<a class="headerlink" href="#aljabar-matrix" title="Link to this heading">#</a></h1>
+<p>Matrix adalah suatu kumpulan bilangan real yang disusun dengan bentuk m x n yang dimana m itu adalah baris dan n kolom</p>
+<p>pada matrix terdapat beberapa elemen matrix yang terdapat pada suatu bangun matrix, Contoh: Jika menggunkan varibel A $<span class="math notranslate nohighlight">\( [[a_11], [a_1,2], [dst]]\)</span>$</p>
+<section id="matrix-terdiri-dari-beberapa-jenis-diantaranya-adalah">
+<h2>Matrix terdiri dari beberapa jenis diantaranya adalah<a class="headerlink" href="#matrix-terdiri-dari-beberapa-jenis-diantaranya-adalah" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>matrix persegi</p></li>
 <li><p>matrix kolom</p></li>
@@ -416,13 +406,19 @@ document.write(`
 <li><p>matrix nol</p></li>
 <li><p>matrix identitas</p></li>
 </ul>
+</section>
+<section id="operasi-matrix">
+<h2>Operasi Matrix<a class="headerlink" href="#operasi-matrix" title="Link to this heading">#</a></h2>
+<p>Penjumlahan Matrix</p>
+<p>Pada penjumlahan matrix,syarat dari penjulahan matrix adalah kedua bangun matrix harus memiliki jumlah kolom dan baris yang sama, agar dapat dijumlahkan satu sama lain semisal Matrix A (3,3) + B (3,3), A (2,3) + B (2,3)
+jika suatu bangun matrix tidak memiliki jumlah kolom dan baris yang tidak sama maka matrix tidak dapat dijumlahkan karena ada beberapa elemen matrix yang tidak memiliki pasangan</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># saya disuruh mebuat matrik A (3x3) B (3x3) C (3x2)</span>
 <span class="c1">#</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">([[</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
 
 <span class="n">B</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
@@ -467,11 +463,40 @@ c
 </div>
 </div>
 </div>
+<p>Pengurangan</p>
+<p>Konsep pada pengurangan matrix sama dengan penjulahan dimana setiap elemen matrix harus memiliki pasangan agar dapat dioperasikan, setelah dua buah matrix dioperasikan maka akan menghasilkan matrix baru yang elemennya terdiri dari hasil pengurangan elemen elemen matrix yang teroperasi</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Z</span> <span class="o">=</span> <span class="n">A</span> <span class="o">-</span> <span class="n">B</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matrix Z adalah contoh dari hasil pengurangan MAtrix A, dan Matrix B</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">Z</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matrix Z adalah contoh dari hasil pengurangan MAtrix A, dan Matrix B
+ [[ 6  8 -8]
+ [-3 -1  1]
+ [-1 -3 -3]]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Perkalian</p>
+<ul class="simple">
+<li><p>Perkalian matrix dengan skalar
+operasi ini dilakukan dengan cara mengalikan setiap elemen matrix dengan skalar tersebut, yang kemudian akan menghsilkan ssebuah matrix baru
+, Contoh operasi matrix skalar adalah Matrix A x 7 maka operasi yang akan diproses adalah setiap elemen pada matrix A x 7</p></li>
+<li><p>Perkalian matrix dengan matrix
+dapat diasumsikan bahwasannya jika semisal matrix A x matrix B maka kolom dari Matrix A harus sama dengan baris Matrix. contoh operasinya adalah
+elemen dari matrix A [(a,b)] matrix B [(c,d)] = [(ac + bd)]</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Perkalian</span>
 <span class="n">E</span> <span class="o">=</span> <span class="n">A</span><span class="nd">@B</span>
 <span class="n">F</span> <span class="o">=</span> <span class="n">B</span><span class="nd">@C</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matrix E adalah hasil perkalian dari Matrix A dan B </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matrix F adalah hasil perkalian dari Matrix B dan C </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
@@ -488,7 +513,15 @@ c
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matrix E adalah hasil perkalian dari Matrix A dan B 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a 
+ [[8 9 1]
+ [1 2 3]
+ [2 1 1]]
+b
+ [[2 1 9]
+ [4 3 2]
+ [3 4 4]]
+Matrix E adalah hasil perkalian dari Matrix A dan B 
  [[55 39 94]
  [19 19 25]
  [11  9 24]]
@@ -518,6 +551,8 @@ Matrix F adalah hasil perkalian dari Matrix B dan C
 </div>
 </div>
 </div>
+<p>Transpose</p>
+<p>Transpose dari sebuah matrix adalah operator yang membalikkan posisi matrix sepanjang diagonal utamanya dalam kata lain menukarkan antara baris dan kolomnya</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">C_T</span><span class="o">=</span> <span class="n">C</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
@@ -562,22 +597,19 @@ Matrix C dikali dengan Matrix C Transpose
   <span class="n">result</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span> <span class="c1"># Menginisialisasikan dulu matrix dengan semua value 0</span>
 
   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">m1</span><span class="p">)):</span>
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">m2</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">m2</span><span class="p">)):</span>
       <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">m2</span><span class="p">)):</span>
         <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">m1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">m2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
   <span class="k">return</span> <span class="n">result</span>
 
 <span class="n">hasil</span> <span class="o">=</span> <span class="n">multiply_matrix</span><span class="p">(</span><span class="n">m1</span><span class="p">,</span><span class="n">m2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hasil perkalian Matrix_1 dan Matrix 2 = </span><span class="si">{</span><span class="n">hasil</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pembuktian untuk Matrix A @ B =</span><span class="se">\n</span><span class="si">{</span><span class="n">A</span><span class="w"> </span><span class="o">@</span><span class="w"> </span><span class="n">B</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil perkalian Matrix_1 dan Matrix 2 = [[55, 39, 94], [19, 19, 25], [11, 9, 24]]
-
 Pembuktian untuk Matrix A @ B =
 [[55 39 94]
  [19 19 25]
@@ -644,7 +676,8 @@ Pembuktian untuk Matrix A @ B =
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aljabar-matrix">Aljabar Matrix</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrix-terdiri-dari-beberapa-jenis-diantaranya-adalah">Matrix terdiri dari beberapa jenis diantaranya adalah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-matrix">Operasi Matrix</a></li>
 </ul>
   </nav></div>
 
