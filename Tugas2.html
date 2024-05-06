@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Aljabar Matrix &#8212; My sample book</title>
+    <title>Aljabar Matrix &#8212; KAL</title>
   
   
   
@@ -42,7 +42,7 @@
   <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
@@ -62,6 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Matrix Invers" href="Matrix_Invers.html" />
     <link rel="prev" title="Penyelesaian persamaan linear dengan sistem Gauss" href="sistemlinear.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -151,8 +152,8 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="KAL - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="KAL - Home"/>`);</script>
   
   
 </a></div>
@@ -173,14 +174,24 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Selamat datang di Forum kelasku
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sistemlinear.html">Penyelesaian persamaan linear dengan sistem Gauss</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Aljabar Matrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Matrix_Invers.html">Matrix Invers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html">Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</a></li>
+
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -498,7 +509,7 @@ elemen dari matrix A [(a,b)] matrix B [(c,d)] = [(ac + bd)]</p></li>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matrix E adalah hasil perkalian dari Matrix A dan B </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">E</span><span class="o">.</span><span class="n">arrow</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matrix E adalah hasil perkalian dari Matrix A dan B </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matrix F adalah hasil perkalian dari Matrix B dan C </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
 <span class="c1"># Perkalian Lainnya</span>
@@ -522,18 +533,32 @@ b
  [[4 2 3]
  [2 3 1]
  [0 1 1]]
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="nn">&lt;ipython-input-4-f84ef72b4ffd&gt;</span> in <span class="ni">&lt;cell line: 7&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">A</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">7</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matrix E adalah hasil perkalian dari Matrix A dan B </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">E</span><span class="o">.</span><span class="n">arrow</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Matrix F adalah hasil perkalian dari Matrix B dan C </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
-
-<span class="ne">AttributeError</span>: &#39;numpy.ndarray&#39; object has no attribute &#39;arrow&#39;
+Matrix E adalah hasil perkalian dari Matrix A dan B 
+ [[ 1.00000000e+00  1.11022302e-16  1.11022302e-16]
+ [ 0.00000000e+00  1.00000000e+00 -5.55111512e-17]
+ [ 0.00000000e+00  0.00000000e+00  1.00000000e+00]]
+Matrix F adalah hasil perkalian dari Matrix B dan C 
+ [[1.00000000e+00 1.11022302e-16 2.22044605e-16]
+ [0.00000000e+00 1.00000000e+00 2.22044605e-16]
+ [0.00000000e+00 0.00000000e+00 1.00000000e+00]]
+------------------------------
+[[3. 3.]
+ [1. 2.]
+ [2. 1.]]
+[[3. 3.]
+ [1. 2.]
+ [2. 1.]]
+------------------------------
+[[ 7.00000000e+00  7.77156117e-16  7.77156117e-16]
+ [ 0.00000000e+00  7.00000000e+00 -3.88578059e-16]
+ [ 0.00000000e+00  0.00000000e+00  7.00000000e+00]]
+[[7.00000000e+00 8.88178420e-16 8.88178420e-16]
+ [0.00000000e+00 7.00000000e+00 2.22044605e-16]
+ [0.00000000e+00 0.00000000e+00 7.00000000e+00]]
+[[ 7.00000000e+00  6.66133815e-16  6.66133815e-16]
+ [-2.22044605e-16  7.00000000e+00  1.66533454e-16]
+ [ 2.22044605e-16 -2.22044605e-16  7.00000000e+00]]
+------------------------------
 </pre></div>
 </div>
 </div>
@@ -596,9 +621,9 @@ Matrix C dikali dengan Matrix C Transpose
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil perkalian Matrix_1 dan Matrix 2 = [[-1, 0], [0, -1]]
 Pembuktian untuk Matrix A @ B =
-[[55 39 94]
- [19 19 25]
- [11  9 24]]
+[[ 1.00000000e+00  1.11022302e-16  1.11022302e-16]
+ [ 0.00000000e+00  1.00000000e+00 -5.55111512e-17]
+ [ 0.00000000e+00  0.00000000e+00  1.00000000e+00]]
 </pre></div>
 </div>
 </div>
@@ -645,6 +670,15 @@ Pembuktian untuk Matrix A @ B =
         <p class="prev-next-title">Penyelesaian persamaan linear dengan sistem Gauss</p>
       </div>
     </a>
+    <a class="right-next"
+       href="Matrix_Invers.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Matrix Invers</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -677,7 +711,7 @@ Pembuktian untuk Matrix A @ B =
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By M. Thoriqul Huda
 </p>
 
   </div>
