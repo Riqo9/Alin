@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1 &#8212; KAL</title>
+    <title>Determinan Matrix &#8212; KAL</title>
   
   
   
@@ -180,14 +180,7 @@
 <li class="toctree-l1"><a class="reference internal" href="sistemlinear.html">Penyelesaian persamaan linear dengan sistem Gauss</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas2.html">Aljabar Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Matrix_Invers.html">Matrix Invers</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</a></li>
-
-
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Determinan Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kofaktor.html">Tugas Kofaktor matrix ordo 5x5</a></li>
 </ul>
 
@@ -374,7 +367,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</h1>
+    <h1>Determinan Matrix</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -384,19 +377,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-2-jika-salah-satu-baris-diubah-nilai-elemennya-maka-hasil-determinannnya-juga-ikut-berubah">Sifat 2 : jika salah satu baris diubah nilai elemennya maka hasil determinannnya juga ikut berubah</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-3-jika-suatu-baris-ataupun-kolom-merupakan-kelipatan-dari-baris-atau-kolom-yang-lain-maka-determinan-matrix-tersebut-adalah-0-baris-2-adalah-kelipatan-dari-baris-1">Sifat 3 : Jika suatu baris ataupun kolom merupakan kelipatan dari baris atau kolom yang lain maka determinan matrix tersebut adalah 0 (baris 2 adalah kelipatan dari baris 1)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-4-jika-matrix-tersebut-adalah-kelipatan-sebanyak-n-matrix-maka-untuk-mencari-determinan-adalah-n-sebanyak-ordo-determinan-matrix-contoh-matrix-g-adalah-kelipatan-2-kali-dari-matrix-d-2-3-det-d">sifat 4 : Jika matrix tersebut adalah kelipatan sebanyak n * matrix maka untuk mencari determinan adalah (n^(sebanyak ordo)determinan matrix)contoh matrix g adalah kelipatan 2 kali dari matrix d : (2^3(det d))</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-dengan-ordo-2x2">Contoh dengan ordo 2x2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-1-determinan-matrix-identitas-dengan-ordo-berapapun-adalah-1">Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-2-jika-salah-satu-baris-diubah-nilai-elemennya-maka-hasil-determinannnya-juga-ikut-berubah">Sifat 2 : jika salah satu baris diubah nilai elemennya maka hasil determinannnya juga ikut berubah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-3-jika-suatu-baris-ataupun-kolom-merupakan-kelipatan-dari-baris-atau-kolom-yang-lain-maka-determinan-matrix-tersebut-adalah-0-baris-2-adalah-kelipatan-dari-baris-1">Sifat 3 : Jika suatu baris ataupun kolom merupakan kelipatan dari baris atau kolom yang lain maka determinan matrix tersebut adalah 0 (baris 2 adalah kelipatan dari baris 1)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-4-jika-matrix-tersebut-adalah-kelipatan-sebanyak-n-matrix-maka-untuk-mencari-determinan-adalah-n-sebanyak-ordo-determinan-matrix-contoh-matrix-g-adalah-kelipatan-2-kali-dari-matrix-d-2-3-det-d">sifat 4 : Jika matrix tersebut adalah kelipatan sebanyak n * matrix maka untuk mencari determinan adalah (n^(sebanyak ordo)determinan matrix)contoh matrix g adalah kelipatan 2 kali dari matrix d : (2^3(det d))</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-dengan-ordo-2x2">Contoh dengan ordo 2x2</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-5-jika-terdapat-matrix-baru-dengan-nilai-salah-satu-baris-atau-kolom-adalah-kelipatan-2-dari-matrix-sebelumnya-maka-dapat-disimpulkan-dengan-2-determinan-matrix">Sifat 5 : Jika terdapat matrix baru dengan nilai salah satu baris atau kolom adalah kelipatan 2 dari matrix sebelumnya maka dapat disimpulkan dengan 2*(determinan matrix)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-6-jika-suatu-matrix-yang-berasal-dari-penjumlahan-matrix-k-dengan-matrix-a-maka-untuk-mencari-determinan-cukup-menjumlahkan-hasil-dari-2-determinan-matrix-tersebut">Sifat 6 : Jika suatu matrix yang berasal dari penjumlahan matrix k dengan matrix a maka untuk mencari determinan cukup menjumlahkan hasil dari 2 determinan matrix tersebut</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-7-jika-ada-matrix-segitiga-atas-atau-bawah-maka-determinan-nya-adalah-perkalian-anggota-diagonal-matrix-tersebut">Sifat 7 : Jika ada matrix segitiga atas atau bawah maka determinan nya adalah perkalian anggota diagonal matrix tersebut</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-8-untuk-mencari-determinan-dari-hasil-perkalian-matrix-o-dengan-matrix-p-yaitu-dengan-mengalikan-determinan-matrix-o-dan-p-contoh-det-o-1-det-p-1-maka-det-q-adalah-0">Sifat 8 : untuk mencari determinan dari Hasil perkalian matrix O dengan matrix p yaitu dengan mengalikan determinan matrix O dan p contoh (det O = 1 , det p = 1 maka det q adalah 0)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-5-jika-terdapat-matrix-baru-dengan-nilai-salah-satu-baris-atau-kolom-adalah-kelipatan-2-dari-matrix-sebelumnya-maka-dapat-disimpulkan-dengan-2-determinan-matrix">Sifat 5 : Jika terdapat matrix baru dengan nilai salah satu baris atau kolom adalah kelipatan 2 dari matrix sebelumnya maka dapat disimpulkan dengan 2*(determinan matrix)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-6-jika-suatu-matrix-yang-berasal-dari-penjumlahan-matrix-k-dengan-matrix-a-maka-untuk-mencari-determinan-cukup-menjumlahkan-hasil-dari-2-determinan-matrix-tersebut">Sifat 6 : Jika suatu matrix yang berasal dari penjumlahan matrix k dengan matrix a maka untuk mencari determinan cukup menjumlahkan hasil dari 2 determinan matrix tersebut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-7-jika-ada-matrix-segitiga-atas-atau-bawah-maka-determinan-nya-adalah-perkalian-anggota-diagonal-matrix-tersebut">Sifat 7 : Jika ada matrix segitiga atas atau bawah maka determinan nya adalah perkalian anggota diagonal matrix tersebut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-8-untuk-mencari-determinan-dari-hasil-perkalian-matrix-o-dengan-matrix-p-yaitu-dengan-mengalikan-determinan-matrix-o-dan-p-contoh-det-o-1-det-p-1-maka-det-q-adalah-0">Sifat 8 : untuk mencari determinan dari Hasil perkalian matrix O dengan matrix p yaitu dengan mengalikan determinan matrix O dan p contoh (det O = 1 , det p = 1 maka det q adalah 0)</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -407,7 +399,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="determinan-matrix">
+<h1>Determinan Matrix<a class="headerlink" href="#determinan-matrix" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># importing Numpy package</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -473,7 +467,7 @@ Determinant of given 2X2 matrix:
 </div>
 </div>
 <section id="sifat-1-determinan-matrix-identitas-dengan-ordo-berapapun-adalah-1">
-<h1>Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1<a class="headerlink" href="#sifat-1-determinan-matrix-identitas-dengan-ordo-berapapun-adalah-1" title="Link to this heading">#</a></h1>
+<h2>Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1<a class="headerlink" href="#sifat-1-determinan-matrix-identitas-dengan-ordo-berapapun-adalah-1" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
@@ -498,7 +492,7 @@ Determinant of given 2X2 matrix:
 </div>
 </section>
 <section id="sifat-2-jika-salah-satu-baris-diubah-nilai-elemennya-maka-hasil-determinannnya-juga-ikut-berubah">
-<h1>Sifat 2 : jika salah satu baris diubah nilai elemennya maka hasil determinannnya juga ikut berubah<a class="headerlink" href="#sifat-2-jika-salah-satu-baris-diubah-nilai-elemennya-maka-hasil-determinannnya-juga-ikut-berubah" title="Link to this heading">#</a></h1>
+<h2>Sifat 2 : jika salah satu baris diubah nilai elemennya maka hasil determinannnya juga ikut berubah<a class="headerlink" href="#sifat-2-jika-salah-satu-baris-diubah-nilai-elemennya-maka-hasil-determinannnya-juga-ikut-berubah" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
@@ -543,7 +537,7 @@ sifat 2 : merubah baris dapat mengubah hasil determinan
 </div>
 </section>
 <section id="sifat-3-jika-suatu-baris-ataupun-kolom-merupakan-kelipatan-dari-baris-atau-kolom-yang-lain-maka-determinan-matrix-tersebut-adalah-0-baris-2-adalah-kelipatan-dari-baris-1">
-<h1>Sifat 3 : Jika suatu baris ataupun kolom merupakan kelipatan dari baris atau kolom yang lain maka determinan matrix tersebut adalah 0 (baris 2 adalah kelipatan dari baris 1)<a class="headerlink" href="#sifat-3-jika-suatu-baris-ataupun-kolom-merupakan-kelipatan-dari-baris-atau-kolom-yang-lain-maka-determinan-matrix-tersebut-adalah-0-baris-2-adalah-kelipatan-dari-baris-1" title="Link to this heading">#</a></h1>
+<h2>Sifat 3 : Jika suatu baris ataupun kolom merupakan kelipatan dari baris atau kolom yang lain maka determinan matrix tersebut adalah 0 (baris 2 adalah kelipatan dari baris 1)<a class="headerlink" href="#sifat-3-jika-suatu-baris-ataupun-kolom-merupakan-kelipatan-dari-baris-atau-kolom-yang-lain-maka-determinan-matrix-tersebut-adalah-0-baris-2-adalah-kelipatan-dari-baris-1" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
@@ -590,7 +584,7 @@ sifat 3 : Jika suatu kolom adalah kelipatan dari kolom yang lain maka determinan
 </div>
 </section>
 <section id="sifat-4-jika-matrix-tersebut-adalah-kelipatan-sebanyak-n-matrix-maka-untuk-mencari-determinan-adalah-n-sebanyak-ordo-determinan-matrix-contoh-matrix-g-adalah-kelipatan-2-kali-dari-matrix-d-2-3-det-d">
-<h1>sifat 4 : Jika matrix tersebut adalah kelipatan sebanyak n * matrix maka untuk mencari determinan adalah (n^(sebanyak ordo)determinan matrix)contoh matrix g adalah kelipatan 2 kali dari matrix d : (2^3(det d))<a class="headerlink" href="#sifat-4-jika-matrix-tersebut-adalah-kelipatan-sebanyak-n-matrix-maka-untuk-mencari-determinan-adalah-n-sebanyak-ordo-determinan-matrix-contoh-matrix-g-adalah-kelipatan-2-kali-dari-matrix-d-2-3-det-d" title="Link to this heading">#</a></h1>
+<h2>sifat 4 : Jika matrix tersebut adalah kelipatan sebanyak n * matrix maka untuk mencari determinan adalah (n^(sebanyak ordo)determinan matrix)contoh matrix g adalah kelipatan 2 kali dari matrix d : (2^3(det d))<a class="headerlink" href="#sifat-4-jika-matrix-tersebut-adalah-kelipatan-sebanyak-n-matrix-maka-untuk-mencari-determinan-adalah-n-sebanyak-ordo-determinan-matrix-contoh-matrix-g-adalah-kelipatan-2-kali-dari-matrix-d-2-3-det-d" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
@@ -614,7 +608,7 @@ sifat 4 : Jika Matrix tersebut adalah kelipatan 2 x matrix d maka dapat disimpul
 </div>
 </div>
 <section id="contoh-dengan-ordo-2x2">
-<h2>Contoh dengan ordo 2x2<a class="headerlink" href="#contoh-dengan-ordo-2x2" title="Link to this heading">#</a></h2>
+<h3>Contoh dengan ordo 2x2<a class="headerlink" href="#contoh-dengan-ordo-2x2" title="Link to this heading">#</a></h3>
 <p>matrix h adalah kelipatan 2x matrix a jadi (2^2(det a)) = -20</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -658,7 +652,7 @@ sifat 4 : Jika suatu kolom adalah kelipatan dari kolom yang lain maka determinan
 </section>
 </section>
 <section id="sifat-5-jika-terdapat-matrix-baru-dengan-nilai-salah-satu-baris-atau-kolom-adalah-kelipatan-2-dari-matrix-sebelumnya-maka-dapat-disimpulkan-dengan-2-determinan-matrix">
-<h1>Sifat 5 : Jika terdapat matrix baru dengan nilai salah satu baris atau kolom adalah kelipatan 2 dari matrix sebelumnya maka dapat disimpulkan dengan 2*(determinan matrix)<a class="headerlink" href="#sifat-5-jika-terdapat-matrix-baru-dengan-nilai-salah-satu-baris-atau-kolom-adalah-kelipatan-2-dari-matrix-sebelumnya-maka-dapat-disimpulkan-dengan-2-determinan-matrix" title="Link to this heading">#</a></h1>
+<h2>Sifat 5 : Jika terdapat matrix baru dengan nilai salah satu baris atau kolom adalah kelipatan 2 dari matrix sebelumnya maka dapat disimpulkan dengan 2*(determinan matrix)<a class="headerlink" href="#sifat-5-jika-terdapat-matrix-baru-dengan-nilai-salah-satu-baris-atau-kolom-adalah-kelipatan-2-dari-matrix-sebelumnya-maka-dapat-disimpulkan-dengan-2-determinan-matrix" title="Link to this heading">#</a></h2>
 <p>contoh matrix i baris pertama adalah kelipatan 2 dari matrix a
 contoh matrix j kolom pertama adalah kelipatan 2 dari matrix a</p>
 <div class="cell docutils container">
@@ -703,7 +697,7 @@ sifat 5 : jika terdapat matrix baru dengan nilai salah satu kolom adalah kelipat
 </div>
 </section>
 <section id="sifat-6-jika-suatu-matrix-yang-berasal-dari-penjumlahan-matrix-k-dengan-matrix-a-maka-untuk-mencari-determinan-cukup-menjumlahkan-hasil-dari-2-determinan-matrix-tersebut">
-<h1>Sifat 6 : Jika suatu matrix yang berasal dari penjumlahan matrix k dengan matrix a maka untuk mencari determinan cukup menjumlahkan hasil dari 2 determinan matrix tersebut<a class="headerlink" href="#sifat-6-jika-suatu-matrix-yang-berasal-dari-penjumlahan-matrix-k-dengan-matrix-a-maka-untuk-mencari-determinan-cukup-menjumlahkan-hasil-dari-2-determinan-matrix-tersebut" title="Link to this heading">#</a></h1>
+<h2>Sifat 6 : Jika suatu matrix yang berasal dari penjumlahan matrix k dengan matrix a maka untuk mencari determinan cukup menjumlahkan hasil dari 2 determinan matrix tersebut<a class="headerlink" href="#sifat-6-jika-suatu-matrix-yang-berasal-dari-penjumlahan-matrix-k-dengan-matrix-a-maka-untuk-mencari-determinan-cukup-menjumlahkan-hasil-dari-2-determinan-matrix-tersebut" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
@@ -764,7 +758,7 @@ sifat 5 : jika terdapat matrix baru dengan nilai salah satu kolom adalah kelipat
 </div>
 </section>
 <section id="sifat-7-jika-ada-matrix-segitiga-atas-atau-bawah-maka-determinan-nya-adalah-perkalian-anggota-diagonal-matrix-tersebut">
-<h1>Sifat 7 : Jika ada matrix segitiga atas atau bawah maka determinan nya adalah perkalian anggota diagonal matrix tersebut<a class="headerlink" href="#sifat-7-jika-ada-matrix-segitiga-atas-atau-bawah-maka-determinan-nya-adalah-perkalian-anggota-diagonal-matrix-tersebut" title="Link to this heading">#</a></h1>
+<h2>Sifat 7 : Jika ada matrix segitiga atas atau bawah maka determinan nya adalah perkalian anggota diagonal matrix tersebut<a class="headerlink" href="#sifat-7-jika-ada-matrix-segitiga-atas-atau-bawah-maka-determinan-nya-adalah-perkalian-anggota-diagonal-matrix-tersebut" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
@@ -809,7 +803,7 @@ sifat 5 : jika terdapat matrix baru dengan nilai salah satu kolom adalah kelipat
 </div>
 </section>
 <section id="sifat-8-untuk-mencari-determinan-dari-hasil-perkalian-matrix-o-dengan-matrix-p-yaitu-dengan-mengalikan-determinan-matrix-o-dan-p-contoh-det-o-1-det-p-1-maka-det-q-adalah-0">
-<h1>Sifat 8 : untuk mencari determinan dari Hasil perkalian matrix O dengan matrix p yaitu dengan mengalikan determinan matrix O dan p contoh (det O = 1 , det p = 1 maka det q adalah 0)<a class="headerlink" href="#sifat-8-untuk-mencari-determinan-dari-hasil-perkalian-matrix-o-dengan-matrix-p-yaitu-dengan-mengalikan-determinan-matrix-o-dan-p-contoh-det-o-1-det-p-1-maka-det-q-adalah-0" title="Link to this heading">#</a></h1>
+<h2>Sifat 8 : untuk mencari determinan dari Hasil perkalian matrix O dengan matrix p yaitu dengan mengalikan determinan matrix O dan p contoh (det O = 1 , det p = 1 maka det q adalah 0)<a class="headerlink" href="#sifat-8-untuk-mencari-determinan-dari-hasil-perkalian-matrix-o-dengan-matrix-p-yaitu-dengan-mengalikan-determinan-matrix-o-dan-p-contoh-det-o-1-det-p-1-maka-det-q-adalah-0" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">O</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
@@ -843,9 +837,7 @@ sifat 5 : jika terdapat matrix baru dengan nilai salah satu kolom adalah kelipat
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[1 1]
  [1 1]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+0
 </pre></div>
 </div>
 </div>
@@ -867,6 +859,7 @@ sifat 5 : jika terdapat matrix baru dengan nilai salah satu kolom adalah kelipat
 </div>
 </div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -933,19 +926,18 @@ sifat 5 : jika terdapat matrix baru dengan nilai salah satu kolom adalah kelipat
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-2-jika-salah-satu-baris-diubah-nilai-elemennya-maka-hasil-determinannnya-juga-ikut-berubah">Sifat 2 : jika salah satu baris diubah nilai elemennya maka hasil determinannnya juga ikut berubah</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-3-jika-suatu-baris-ataupun-kolom-merupakan-kelipatan-dari-baris-atau-kolom-yang-lain-maka-determinan-matrix-tersebut-adalah-0-baris-2-adalah-kelipatan-dari-baris-1">Sifat 3 : Jika suatu baris ataupun kolom merupakan kelipatan dari baris atau kolom yang lain maka determinan matrix tersebut adalah 0 (baris 2 adalah kelipatan dari baris 1)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-4-jika-matrix-tersebut-adalah-kelipatan-sebanyak-n-matrix-maka-untuk-mencari-determinan-adalah-n-sebanyak-ordo-determinan-matrix-contoh-matrix-g-adalah-kelipatan-2-kali-dari-matrix-d-2-3-det-d">sifat 4 : Jika matrix tersebut adalah kelipatan sebanyak n * matrix maka untuk mencari determinan adalah (n^(sebanyak ordo)determinan matrix)contoh matrix g adalah kelipatan 2 kali dari matrix d : (2^3(det d))</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-dengan-ordo-2x2">Contoh dengan ordo 2x2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-1-determinan-matrix-identitas-dengan-ordo-berapapun-adalah-1">Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-2-jika-salah-satu-baris-diubah-nilai-elemennya-maka-hasil-determinannnya-juga-ikut-berubah">Sifat 2 : jika salah satu baris diubah nilai elemennya maka hasil determinannnya juga ikut berubah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-3-jika-suatu-baris-ataupun-kolom-merupakan-kelipatan-dari-baris-atau-kolom-yang-lain-maka-determinan-matrix-tersebut-adalah-0-baris-2-adalah-kelipatan-dari-baris-1">Sifat 3 : Jika suatu baris ataupun kolom merupakan kelipatan dari baris atau kolom yang lain maka determinan matrix tersebut adalah 0 (baris 2 adalah kelipatan dari baris 1)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-4-jika-matrix-tersebut-adalah-kelipatan-sebanyak-n-matrix-maka-untuk-mencari-determinan-adalah-n-sebanyak-ordo-determinan-matrix-contoh-matrix-g-adalah-kelipatan-2-kali-dari-matrix-d-2-3-det-d">sifat 4 : Jika matrix tersebut adalah kelipatan sebanyak n * matrix maka untuk mencari determinan adalah (n^(sebanyak ordo)determinan matrix)contoh matrix g adalah kelipatan 2 kali dari matrix d : (2^3(det d))</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-dengan-ordo-2x2">Contoh dengan ordo 2x2</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-5-jika-terdapat-matrix-baru-dengan-nilai-salah-satu-baris-atau-kolom-adalah-kelipatan-2-dari-matrix-sebelumnya-maka-dapat-disimpulkan-dengan-2-determinan-matrix">Sifat 5 : Jika terdapat matrix baru dengan nilai salah satu baris atau kolom adalah kelipatan 2 dari matrix sebelumnya maka dapat disimpulkan dengan 2*(determinan matrix)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-6-jika-suatu-matrix-yang-berasal-dari-penjumlahan-matrix-k-dengan-matrix-a-maka-untuk-mencari-determinan-cukup-menjumlahkan-hasil-dari-2-determinan-matrix-tersebut">Sifat 6 : Jika suatu matrix yang berasal dari penjumlahan matrix k dengan matrix a maka untuk mencari determinan cukup menjumlahkan hasil dari 2 determinan matrix tersebut</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-7-jika-ada-matrix-segitiga-atas-atau-bawah-maka-determinan-nya-adalah-perkalian-anggota-diagonal-matrix-tersebut">Sifat 7 : Jika ada matrix segitiga atas atau bawah maka determinan nya adalah perkalian anggota diagonal matrix tersebut</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-8-untuk-mencari-determinan-dari-hasil-perkalian-matrix-o-dengan-matrix-p-yaitu-dengan-mengalikan-determinan-matrix-o-dan-p-contoh-det-o-1-det-p-1-maka-det-q-adalah-0">Sifat 8 : untuk mencari determinan dari Hasil perkalian matrix O dengan matrix p yaitu dengan mengalikan determinan matrix O dan p contoh (det O = 1 , det p = 1 maka det q adalah 0)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-5-jika-terdapat-matrix-baru-dengan-nilai-salah-satu-baris-atau-kolom-adalah-kelipatan-2-dari-matrix-sebelumnya-maka-dapat-disimpulkan-dengan-2-determinan-matrix">Sifat 5 : Jika terdapat matrix baru dengan nilai salah satu baris atau kolom adalah kelipatan 2 dari matrix sebelumnya maka dapat disimpulkan dengan 2*(determinan matrix)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-6-jika-suatu-matrix-yang-berasal-dari-penjumlahan-matrix-k-dengan-matrix-a-maka-untuk-mencari-determinan-cukup-menjumlahkan-hasil-dari-2-determinan-matrix-tersebut">Sifat 6 : Jika suatu matrix yang berasal dari penjumlahan matrix k dengan matrix a maka untuk mencari determinan cukup menjumlahkan hasil dari 2 determinan matrix tersebut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-7-jika-ada-matrix-segitiga-atas-atau-bawah-maka-determinan-nya-adalah-perkalian-anggota-diagonal-matrix-tersebut">Sifat 7 : Jika ada matrix segitiga atas atau bawah maka determinan nya adalah perkalian anggota diagonal matrix tersebut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-8-untuk-mencari-determinan-dari-hasil-perkalian-matrix-o-dengan-matrix-p-yaitu-dengan-mengalikan-determinan-matrix-o-dan-p-contoh-det-o-1-det-p-1-maka-det-q-adalah-0">Sifat 8 : untuk mencari determinan dari Hasil perkalian matrix O dengan matrix p yaitu dengan mengalikan determinan matrix O dan p contoh (det O = 1 , det p = 1 maka det q adalah 0)</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
