@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Matrix_Invers';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1" href="Determinanmatrix.html" />
+    <link rel="next" title="Determinan Matrix" href="Determinanmatrix.html" />
     <link rel="prev" title="Aljabar Matrix" href="Tugas2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -182,15 +182,15 @@
 <li class="toctree-l1"><a class="reference internal" href="sistemlinear.html">Penyelesaian persamaan linear dengan sistem Gauss</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas2.html">Aljabar Matrix</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Matrix Invers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html">Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</a></li>
-
-
-
-
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="Determinanmatrix.html">Determinan Matrix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kofaktor.html">Tugas Kofaktor matrix ordo 5x5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Transsformasi.html">1. Matriks Identitas (Identity Matrix)</a></li>
+
+
+
+
+
+
 </ul>
 
     </div>
@@ -1162,6 +1162,9 @@ x_1+x_2+x_3+x_4+x_5+x_6&amp;=11\
  [-0.   -0.   -0.   -0.   -0.    1.   -0.75  0.25 -0.    2.75 -1.    0.25]]
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1324,6 +1327,9 @@ x_1+x_2+x_3+x_4+x_5+x_6&amp;=11\
  [-0.   -0.   -0.   -0.   -0.    1.   -0.75  0.25 -0.    2.75 -1.    0.25]]
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1378,9 +1384,6 @@ x_1+x_2+x_3+x_4+x_5+x_6&amp;=11\
  [-0.   -0.   -0.   -0.   -0.    1.   -0.75  0.25 -0.    2.75 -1.    0.25]]
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1397,6 +1400,9 @@ x_1+x_2+x_3+x_4+x_5+x_6&amp;=11\
  [ 0.    0.    0.    1.    0.    0.    1.75 -0.25  0.   -3.75  1.   -0.25]
  [ 0.    0.    0.    0.    1.    0.    0.25  0.25  0.   -1.25  0.    0.25]
  [-0.   -0.   -0.   -0.   -0.    1.   -0.75  0.25 -0.    2.75 -1.    0.25]]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -1421,6 +1427,9 @@ x_1+x_2+x_3+x_4+x_5+x_6&amp;=11\
    0.25        0.25        0.         -1.25        0.          0.25      ]
  [-0.         -0.         -0.         -0.         -0.          1.
   -0.75        0.25       -0.          2.75       -1.          0.25      ]]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -1469,9 +1478,6 @@ x_1+x_2+x_3+x_4+x_5+x_6&amp;=11\
    0.25        0.25        0.         -1.25        0.          0.25      ]
  [-0.         -0.         -0.         -0.         -0.          1.
   -0.75        0.25       -0.          2.75       -1.          0.25      ]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -1658,7 +1664,7 @@ Pembuktian
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Sifat 1 : determinan matrix identitas dengan ordo berapapun adalah 1</p>
+        <p class="prev-next-title">Determinan Matrix</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
